@@ -1,0 +1,81 @@
+@use "mixins";
+
+.free-toys,
+.offices {
+    @include mixins.flex(none, center);
+    width: 95%;
+    margin: auto;
+    font-family: "Poppins";
+    position: relative;
+    .image {
+        @include mixins.flex(center, center);
+        width: 50%;
+        height: 720px;
+        border-radius: 2rem;
+        background-image: linear-gradient(81.23deg, rgb(92, 106, 228) -3.32%, rgba(196, 196, 196, 0) 153.75%),
+            linear-gradient(351.21deg, rgb(255, 215, 113) 0%, rgba(255, 215, 113, 0) 122.07%),
+            linear-gradient(346.2deg, rgb(200, 76, 76) -28.1%, rgb(200, 76, 76) 109.05%);
+
+        img {
+            max-width: 100%;
+            max-height: 55%;
+        }
+    }
+
+    .text {
+        text-align: center;
+        width: 50%;
+        h3 {
+            font-size: 1em;
+            letter-spacing: 0.2em;
+            background-image: linear-gradient(146deg, #5c6ae4, #a14ece);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin: auto;
+            font-size: 1.7em;
+            width: 80%;
+            font-weight: 500;
+        }
+    }
+
+    .image-small {
+        max-width: 100%;
+        width: 30%;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        bottom: -5px;
+        right: 35%;
+        left: 35%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.offices {
+    .text {
+        order: 1;
+        h3 {
+            background-image: linear-gradient(219deg, #e45c5c, #a14ece);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+    }
+    .image {
+        order: 2;
+        img {
+            transform: scale(1.5);
+            margin-right: 35%;
+        }
+    }
+    .image-small {
+        width: 10%;
+        left: 45%;
+        top: -15%;
+    }
+}

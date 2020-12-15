@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f4f1;
+  overflow-x: hidden;
+}
+body .container {
+  max-width: 1440px;
+  margin: auto;
+}
+body .container section, body .container footer {
+  margin-top: 8.5rem;
+}
+
+.header {
+  position: relative;
+  height: 110vh;
+  width: 95%;
+  margin: auto;
+  background-image: url("../../img/hero.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+  margin-top: 4rem;
+  left: 0;
+}
+.header .header-text {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  top: 4rem;
+  color: white;
+  font-family: "Poppins";
+}
+.header .header-text h1 {
+  margin: auto;
+  font-size: 2.5vmax;
+  width: 25vmax;
+}
+.header .nav {
+  display: flex;
+  justify-content: none;
+  align-items: none;
+  margin-top: -4rem;
+  font-family: "Poppins";
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  backdrop-filter: blur(0.4rem) saturate(0.8);
+  background-color: rgba(245, 244, 241, 0.25);
+  z-index: 9999;
+}
+.header .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+}
+.header .nav-container .image {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+}
+.header .nav-container .image img {
+  width: 2rem;
+  cursor: pointer;
+}
+.header .nav-container .image img + img {
+  margin-left: -0.4rem;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 1.7rem;
+  font-weight: 500;
+  position: relative;
+}
+.intro-text {
+  width: 50%;
+}
+.intro p {
+  line-height: 1.3;
+}
+.intro p + p {
+  margin-top: 2.9rem;
+}
+.intro .toy-one, .intro .toy-two {
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  transform: scale(0.7);
+  right: 10%;
+  top: 10%;
+  background-image: url("../../img/pencil.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.intro .toy-two {
+  background-image: url("../../img/strikes.png");
+  left: 8%;
+  bottom: 10%;
+  top: auto;
+}
+
+.free-toys,
+.offices {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+  font-family: "Poppins";
+  position: relative;
+}
+.free-toys .image,
+.offices .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 720px;
+  border-radius: 2rem;
+  background-image: linear-gradient(81.23deg, #5c6ae4 -3.32%, rgba(196, 196, 196, 0) 153.75%), linear-gradient(351.21deg, #ffd771 0%, rgba(255, 215, 113, 0) 122.07%), linear-gradient(346.2deg, #c84c4c -28.1%, #c84c4c 109.05%);
+}
+.free-toys .image img,
+.offices .image img {
+  max-width: 100%;
+  max-height: 55%;
+}
+.free-toys .text,
+.offices .text {
+  text-align: center;
+  width: 50%;
+}
+.free-toys .text h3,
+.offices .text h3 {
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  background-image: linear-gradient(146deg, #5c6ae4, #a14ece);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+}
+.free-toys .text p,
+.offices .text p {
+  margin: auto;
+  font-size: 1.7em;
+  width: 80%;
+  font-weight: 500;
+}
+.free-toys .image-small,
+.offices .image-small {
+  max-width: 100%;
+  width: 30%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: -5px;
+  right: 35%;
+  left: 35%;
+}
+.free-toys .image-small img,
+.offices .image-small img {
+  width: 100%;
+}
+
+.offices .text {
+  order: 1;
+}
+.offices .text h3 {
+  background-image: linear-gradient(219deg, #e45c5c, #a14ece);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.offices .image {
+  order: 2;
+}
+.offices .image img {
+  transform: scale(1.5);
+  margin-right: 35%;
+}
+.offices .image-small {
+  width: 10%;
+  left: 45%;
+  top: -15%;
+}
+
+.mission {
+  font-family: "Poppins";
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.mission p {
+  margin: auto;
+  width: 60%;
+  line-height: 1.3;
+}
+.mission p + p {
+  margin-top: 2.9rem;
+}
+
+.download {
+  text-align: center;
+  margin-top: 2rem !important;
+}
+.download button {
+  color: white;
+  font-family: "Poppins";
+  background: linear-gradient(240.45deg, #ffd771 -133.75%, rgba(255, 215, 113, 0) 99.56%), linear-gradient(100.47deg, #5c6ae4 -20.78%, #c84c4c 155.66%);
+  padding: 1em;
+  border-radius: 0.5em;
+  border: none;
+}
+
+footer {
+  text-align: center;
+  font-family: "Poppins";
+  padding: 2em;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,61 @@
+@use "mixins";
+
+.header {
+    position: relative;
+    height: 110vh;
+    width: 95%;
+    margin: auto;
+    background-image: url("../../img/hero.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem;
+    margin-top: 4rem;
+    left: 0;
+
+    & &-text {
+        position: absolute;
+        text-align: center;
+        right: 0;
+        left: 0;
+        top: 4rem;
+        color: white;
+        font-family: "Poppins";
+        
+        h1 {
+            margin: auto;
+            font-size: 2.5vmax;
+            width: 25vmax;
+        }
+    }
+
+    .nav {
+        @include mixins.flex();
+        margin-top: -4rem;
+        font-family: "Poppins";
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 4em;
+        backdrop-filter: blur(.4rem) saturate(.8);
+        background-color: rgba(245, 244, 241, 0.25);
+        z-index: 9999;
+
+        &-container {
+            @include mixins.flex(space-between, center);
+            width: 85%;
+            margin: auto;
+
+            .image {
+                @include mixins.flex(none, center);
+                img {
+                    width: 2rem;
+                    cursor: pointer;
+                }
+                img + img {
+                    margin-left: -0.4rem;
+                }
+            }
+        }
+    }
+}

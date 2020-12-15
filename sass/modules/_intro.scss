@@ -1,0 +1,41 @@
+@use "mixins";
+.intro {
+    @include mixins.flex(center, none);
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins";
+    font-size: 1.7rem;
+    font-weight: 500;
+    position: relative;
+    &-text {
+        width: 50%;
+    }
+    p {
+        line-height: 1.3;
+    }
+
+    p + p {
+        margin-top: 2.9rem;
+    }
+
+    .toy-one, .toy-two {
+        position: absolute;
+        width: 250px;
+        height: 200px;
+        transform: scale(.7);
+        right: 10%;
+        top: 10%;
+        background-image: url("../../img/pencil.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .toy-two {
+        background-image: url("../../img/strikes.png");
+        left: 8%;
+        bottom: 10%;
+        top: auto;
+    }
+
+}
