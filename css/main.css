@@ -20,7 +20,7 @@ body .container section, body .container footer {
   height: 110vh;
   width: 95%;
   margin: auto;
-  background-image: url("../../img/hero.jpeg");
+  background-image: url(../img/hero.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -103,13 +103,13 @@ body .container section, body .container footer {
   transform: scale(0.7);
   right: 10%;
   top: 10%;
-  background-image: url("../../img/pencil.png");
+  background-image: url(../img/pencil.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .intro .toy-two {
-  background-image: url("../../img/strikes.png");
+  background-image: url(../img/strikes.png);
   left: 8%;
   bottom: 10%;
   top: auto;
