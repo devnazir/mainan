@@ -17,8 +17,6 @@ function onScroll() {
                 p.style.cssText = fadeInTop.fadeInTop();
             }, 500 * index);
         });
-    } else {
-
     }
 
     if (scrollY > otFreeToys) {
