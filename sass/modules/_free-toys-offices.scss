@@ -39,6 +39,9 @@
             font-size: 1.7em;
             width: 80%;
             font-weight: 500;
+            opacity: 0;
+            transform: translateY(150px);
+            transition: 0.5s;
         }
     }
 
@@ -89,7 +92,7 @@
             }
         }
     }
-    @media(max-width: 475px) {
+    @media (max-width: 475px) {
         .image {
             width: 80%;
         }
@@ -122,7 +125,7 @@
         top: -15%;
     }
 
-    @media(max-width:475px) {
+    @media (max-width: 475px) {
         transform: translateY(-150px);
     }
 }

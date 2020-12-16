@@ -12,6 +12,9 @@
     }
     p {
         line-height: 1.3;
+        opacity: 0;
+        transform: translateY(150px);
+        transition: .5s;
     }
 
     p + p {

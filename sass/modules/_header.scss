@@ -26,6 +26,9 @@
             margin: auto;
             font-size: 2.5vmax;
             width: 25vmax;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: .5s;
         }
     }
 
