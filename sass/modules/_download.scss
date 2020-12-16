@@ -10,4 +10,8 @@
         border-radius: 0.5em;
         border: none;
     }
+
+    @media(max-width: 475px) {
+        transform: translateY(-150px);
+    }
 }

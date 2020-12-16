@@ -12,5 +12,17 @@ body {
         section, footer {
             margin-top: 8.5rem;
         }
+
+        @media(max-width: 768px) {
+            section, footer {
+                margin-top: 5rem;
+            }
+        }
+
+        @media(max-width: 475px) {
+            section, footer {
+                margin-top: 2rem;
+            }
+        }
     }
 }

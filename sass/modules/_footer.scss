@@ -2,4 +2,7 @@ footer {
     text-align: center;
     font-family: "Poppins";
     padding: 2em;
+    @media(max-width: 992px) {
+        font-size: .8em;
+    }
 }

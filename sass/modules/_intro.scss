@@ -38,4 +38,33 @@
         top: auto;
     }
 
+    @media(max-width: 992px) {
+        & {
+            font-size: 1.4em;
+        }
+        .toy-one, .toy-two {
+            display: none;
+        }
+    }
+
+    @media(max-width: 768px) {
+        & {
+            font-size: 1em;
+        }
+
+        p + p {
+            margin-top: 1em;
+        }
+    }
+
+    @media(max-width: 475px) {
+        & {
+            padding: 2em;
+            display: block;
+            &-text {
+                width: 100%;
+            }
+        }
+    }
+
 }
